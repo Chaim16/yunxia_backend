@@ -1,0 +1,11 @@
+
+app:
+  name: "backend_python"
+  version: "1.0.0"
+
+alipay:
+  app_id: "9021000144675597"
+  notify_url: "http://282765vewq28.vicp.fun/market/api/v1/alipay/notify/"
+  sign_type: RSA2
+
+

@@ -1,0 +1,8 @@
+import hashlib
+
+
+def hash_encryption(s, salt="backend_python"):
+    h = hashlib.sha3_256()
+    s += salt
+    h.update(s.encode())
+    return h.hexdigest()
