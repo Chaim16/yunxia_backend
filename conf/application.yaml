@@ -10,5 +10,3 @@ alipay:
 
 wx_config:
   auth_url: "https://api.weixin.qq.com/sns/jscode2session"
-  app_id: "wxaf6a133dd74e1ec7"
-  secret:
