@@ -2,9 +2,9 @@ import json
 import uuid
 
 from django.middleware.common import MiddlewareMixin
-from backend_python.utils.log_util import get_logger
-from backend_python.utils.response import setResult
-from backend_python.utils.validate import TransCoding
+from yunxia_backend.utils.log_util import get_logger
+from yunxia_backend.utils.response import setResult
+from yunxia_backend.utils.validate import TransCoding
 
 logger = get_logger("access")
 

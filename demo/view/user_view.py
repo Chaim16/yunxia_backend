@@ -5,11 +5,11 @@ from drf_yasg.utils import swagger_auto_schema
 from rest_framework import viewsets
 from rest_framework.decorators import action
 
-from backend_python.utils.constants_util import Role
-from backend_python.utils.exception_util import BusinessException, ParamsException
-from backend_python.utils.log_util import get_logger
-from backend_python.utils.response import setResult
-from backend_python.utils.validate import TransCoding
+from yunxia_backend.utils.constants_util import Role
+from yunxia_backend.utils.exception_util import BusinessException, ParamsException
+from yunxia_backend.utils.log_util import get_logger
+from yunxia_backend.utils.response import setResult
+from yunxia_backend.utils.validate import TransCoding
 from demo.service.user_model import UserModel
 from demo.view.serilazer import RegisterSerializer, UserModifySerializer, UserDeleteSerializer
 

@@ -1,5 +1,5 @@
 """
-URL configuration for backend_python project.
+URL configuration for yunxia_backend project.
 
 The `urlpatterns` list routes URLs to view. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -26,7 +26,7 @@ from rest_framework_simplejwt.views import (
 )
 from django.conf.urls.static import static
 
-from backend_python import settings
+from yunxia_backend import settings
 
 schema_view = get_schema_view(
     openapi.Info(

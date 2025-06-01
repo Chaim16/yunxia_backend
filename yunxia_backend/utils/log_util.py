@@ -7,7 +7,7 @@
 import os.path
 
 from loguru import logger
-from backend_python.settings import log_conf
+from yunxia_backend.settings import log_conf
 
 handler_dict = {}
 

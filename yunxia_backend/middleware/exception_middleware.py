@@ -2,9 +2,9 @@ import traceback
 
 from django.middleware.common import MiddlewareMixin
 
-from backend_python.utils.exception_util import DataExistsException, DataNotExistsException, BusinessException, ParamsException
-from backend_python.utils.log_util import get_logger
-from backend_python.utils.response import setResult
+from yunxia_backend.utils.exception_util import DataExistsException, DataNotExistsException, BusinessException, ParamsException
+from yunxia_backend.utils.log_util import get_logger
+from yunxia_backend.utils.response import setResult
 
 logger = get_logger("error")
 

@@ -6,8 +6,8 @@ import traceback
 from functools import wraps
 from marshmallow import Schema, fields, validate
 
-from backend_python.utils.log_util import get_logger
-from backend_python.utils.response import setResult
+from yunxia_backend.utils.log_util import get_logger
+from yunxia_backend.utils.response import setResult
 
 logger = get_logger("validate")
 esp_list = ['"', '%', '|', '=', ';', '<', '>', ':', '\'', '\\', '--', '*']

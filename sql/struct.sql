@@ -5,7 +5,7 @@
  Source Server Type    : MySQL
  Source Server Version : 80405 (8.4.5)
  Source Host           : localhost:3306
- Source Schema         : backend_python
+ Source Schema         : yunxia_backend
 
  Target Server Type    : MySQL
  Target Server Version : 80405 (8.4.5)
@@ -14,7 +14,8 @@
  Date: 01/05/2025 23:55:29
 */
 
-CREATE DATABASE backend_python;
+drop database if exists yunxia_backend;
+CREATE DATABASE yunxia_backend CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;

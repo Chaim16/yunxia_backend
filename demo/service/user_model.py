@@ -2,9 +2,9 @@
 from django.core.paginator import Paginator
 
 from demo.models import User
-from backend_python.utils.constants_util import Role
-from backend_python.utils.exception_util import BusinessException
-from backend_python.utils.log_util import get_logger
+from yunxia_backend.utils.constants_util import Role
+from yunxia_backend.utils.exception_util import BusinessException
+from yunxia_backend.utils.log_util import get_logger
 
 logger = get_logger("user")
 
