@@ -1,0 +1,12 @@
+beautifulsoup4==4.13.3
+Django==4.2
+djangorestframework==3.14.0
+djangorestframework_simplejwt==5.4.0
+drf_yasg==1.21.8
+loguru==0.7.3
+marshmallow==3.26.1
+python_alipay_sdk==3.3.0
+PyYAML==6.0.2
+PyYAML==6.0.2
+Requests==2.32.3
+mysqlclient==2.2.7
