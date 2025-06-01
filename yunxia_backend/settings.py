@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'demo',
+    'user',
     'rest_framework',
     'rest_framework_simplejwt',
     'drf_yasg',
@@ -113,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-AUTH_USER_MODEL = "demo.User"
+AUTH_USER_MODEL = "user.User"
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
@@ -142,7 +142,7 @@ log_conf = {
     "level": "DEBUG",
     "format_string": "{time:YYYY:MM:DD:HH:mm:ss} | {thread.name} | {level} | {file.path}:{line} | {message}",
     "log_path": log_path,
-    "common_log_path": os.path.join(log_path, 'draft.log')
+    "common_log_path": os.path.join(log_path, 'common.log')
 }
 
 logger.remove()

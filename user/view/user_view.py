@@ -10,13 +10,31 @@ from yunxia_backend.utils.exception_util import BusinessException, ParamsExcepti
 from yunxia_backend.utils.log_util import get_logger
 from yunxia_backend.utils.response import setResult
 from yunxia_backend.utils.validate import TransCoding
-from demo.service.user_model import UserModel
-from demo.view.serilazer import RegisterSerializer, UserModifySerializer, UserDeleteSerializer
+from user.service.user_model import UserModel
+from user.view.serilazer import RegisterSerializer, UserModifySerializer, UserDeleteSerializer, AuthSerializer
 
 logger = get_logger("user")
 
 
 class UserViewSet(viewsets.ViewSet):
+
+    @action(methods=["POST"], detail=False)
+    @swagger_auto_schema(
+        operation_description="授权",
+        request_body=AuthSerializer,
+        tags=["授权"]
+    )
+    def auth(self, request):
+        serializer = AuthSerializer(data=request.data)
+        if not serializer.is_valid():
+            raise ParamsException(str(serializer.errors))
+        params = json.loads(request.body)
+        code = params.get('code')
+        if not code:
+            raise ParamsException("code不能为空")
+        user_model = UserModel()
+        data = user_model.auth(code)
+        return setResult(data)
 
     @action(methods=['POST'], detail=False)
     @swagger_auto_schema(

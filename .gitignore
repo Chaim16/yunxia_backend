@@ -1,5 +1,6 @@
 logs/
 .idea/
+.env
 
 lib/alipay_app_private_key.txt
 lib/alipay_public_key.txt

@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from demo.models import User
+from user.models import User
 
 
 class RegisterSerializer(serializers.Serializer):
@@ -24,3 +24,8 @@ class UserModifySerializer(serializers.Serializer):
 class UserDeleteSerializer(serializers.Serializer):
 
     username = serializers.CharField(max_length=64, required=True)
+
+
+class AuthSerializer(serializers.Serializer):
+
+    code = serializers.CharField(max_length=32, required=True)

@@ -8,4 +8,7 @@ alipay:
   notify_url: "http://282765vewq28.vicp.fun/market/api/v1/alipay/notify/"
   sign_type: RSA2
 
-
+wx_config:
+  auth_url: "https://api.weixin.qq.com/sns/jscode2session"
+  app_id: "wxaf6a133dd74e1ec7"
+  secret:

@@ -5,6 +5,7 @@ from django.contrib.auth.models import AbstractUser
 class User(AbstractUser):
 
     id = models.BigAutoField(primary_key=True)
+    openid = models.CharField(max_length=128, null=True)
     nickname = models.CharField(max_length=64, null=True)
     gender = models.IntegerField(default=0, null=True)
     phone = models.CharField(max_length=32, null=True)
